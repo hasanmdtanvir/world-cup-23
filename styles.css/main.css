@@ -48,6 +48,42 @@ p {
     right: 10%;
 }
 
+/* animated button on hover effect */
+@keyframes live {
+    0% {
+        background-color: goldenrod;
+    }
+
+    25% {
+        background-color: red;
+        transform: scale(0.5);
+
+    }
+
+    50% {
+        background-color: goldenrod;
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(0.5);
+        background-color: red;
+    }
+
+    100% {
+        background-color: goldenrod;
+        transform: scale(1);
+    }
+}
+
+#animated-button:hover {
+
+    animation: live 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
+
+/* animated end button on hover effect */
+
 .live-button {
     text-decoration: none;
     background-color: #DD0000;
