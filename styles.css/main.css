@@ -21,27 +21,31 @@ header {
 }
 
 .header-banner {
-    width: 100%;
     display: flex;
     align-items: center;
     padding: 10%;
 }
 
-.half-width {
-    width: 40%;
+.header-content {
+    width: 45%;
 }
 
-.half-width h1,
+.header-content h1,
 p {
     color: white;
 }
 
-.half-width h1 {
+.header-content h1 {
     font-size: 4.6em;
 }
 
-.half-width p {
+.header-content p {
     font-size: 16px;
+}
+
+.header-img {
+    width: 45%;
+    right: 10%;
 }
 
 .live-button {
@@ -63,4 +67,61 @@ p {
 .banner-img {
     width: 100%;
     margin-left: 10%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header-banner {
+        display: block;
+    }
+
+    .header-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 1.6em;
+    }
+
+    .live-button {
+        padding: 8px 12px;
+    }
+
+    .header-img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .banner-img {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .header-content h1 {
+        font-size: 2em;
+    }
+
+    .header-content p {
+        text-align: justify;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .live-button {
+        padding: 12px;
+    }
+
+    .header-img {
+        margin-left: 5%;
+    }
+
+    .banner-img {
+        width: 120%;
+        margin-left: 10%;
+    }
 }
